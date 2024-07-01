@@ -94,19 +94,18 @@ def collect_diags(board):
 			
 
 
-def coollect_arrs(board):
+def coollect_arrs():
 	#this is the array that all lists are collected in
 	arra = collect_diags
-	board = create_board
 	#collects all rows
-	for i in len(board):
+	for i in len(create_board):
 		arra.append(i)
 
 	#collects all columns
-	for i in range(len(board[0])):
+	for i in range(len(create_board[0])):
 		new_list = []
-		for j in range(len(board)):
-			new_list.append(board[j][i])
+		for j in range(len(create_board)):
+			new_list.append(create_board[j][i])
 		arra.append(new_list)
 	print(len(arra))
 	return arra
