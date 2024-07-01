@@ -1,2 +1,2 @@
 # forza_quattro
-connect4 game for codeing practice
+connect4 game for coding practice
