@@ -67,7 +67,7 @@ def execute_player_turn(player, board):
 	"""
 	print("it is " + str(player) + "'s turn")
 	print_board(board)
-	input = validate_input("Choose a collom: ",get_valid_inputs(board))
+	input = validate_input("Choose a column: ",get_valid_inputs(board))
 	return drop_piece(board, player, input)
 
 def get_valid_inputs(board):
